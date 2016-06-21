@@ -10,9 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lable: UILabel!
+    @IBOutlet weak var inputText: UITextField!
+    
+    
+    @IBAction func button(sender: AnyObject) {
+        
+        lable.text = inputText.text
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
